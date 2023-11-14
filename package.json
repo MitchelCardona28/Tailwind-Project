@@ -1,0 +1,29 @@
+{
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchelCardona28/Tailwind-Project.git"
+  },
+  "keywords": [
+    "tailwind",
+    "CSS"
+  ],
+  "author": "Mitchel Cardona <michelito428@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MitchelCardona28/Tailwind-Project/issues"
+  },
+  "homepage": "https://github.com/MitchelCardona28/Tailwind-Project#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}
