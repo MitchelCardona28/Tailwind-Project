@@ -4,24 +4,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/css/tailwind.css">
+  <meta name="description" content="A Platzi's travel landing page." >
+  <link rel="stylesheet" href="../public/css/tailwind.css" media="all">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Platzi Travel</title>
 </head>
 
-<body class="box-border font-Monserrat">
-  <header class="w-full h-auto relative">
+<body class="m-0 p-0 box-border font-Montserrat">
+  <header class="w-full min-w-[320px] h-auto relative">
     <nav class="flex flex-col items-center content-center">
-      <img class="w-full h-full" src="./imgs/sanFrancisco.jpg" alt="Image of Golden Gate">
-      <form action="" class="w-full h-full flex flex-col items-center content-center absolute gap-y-72 px-4 py-14">
-        <input class="w-full h-10 p-4 outline-none rounded-full shadow-md" type="search" name="search" id="" placeholder="Enter a city">
-        <button class="w-1/2 h-10 p-2 outline-none bg-white rounded-full font-bold">Explore</button>
+      <img
+        srcset="
+          ./imgs/sanFrancisco-320w.jpg 320w,
+          ./imgs/sanFrancisco-750w.jpg 750w,
+          ./imgs/sanFrancisco-981w.jpg 981w
+        "
+        sizes="
+          calc(25vw + 225px),
+          (max-width: 820px) 750px,
+          (min-width: 620px) calc(72.22vw + 172px),
+          (min-width: 400px) 320px
+        "
+        src="./imgs/sanFrancisco-981w.jpg"
+        alt="Image of Golden Gate">
+      <form action="" class="w-full max-w-xs min-w-[192px] h-full flex flex-col items-center justify-between absolute px-4 py-14">
+        <input class="w-full h-10 p-4 outline-none rounded-full shadow-md"
+          type="search"
+          name="search"
+          id=""
+          placeholder="Enter a city">
+        <button class="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 w-1/2 h-10 p-2 outline-none bg-white rounded-full font-bold">Explore</button>
       </form>
     </nav>
   </header>
 
+  <main class="w-full min-w-[320px] h-auto">
+    <section class="h-auto my-0 mx-auto px-4 py-10 max-w-3xl">
+      <h2 class="heading">Our recommendations</h2>
+      <section class="h-auto flex items-center my-7 mx-auto overflow-x-scroll overscroll-x-contain snap-proximity">
+        <article class="cards">
+          <img
+            src="./imgs/norway.webp"
+            alt="Norway-landscape"
+            class="cards-img">
+          <div class="description">
+            <p class="city">Norway</p>
+            <p class="slogan">Beautiful landscapes</p>
+          </div>
+        </article>
+        <article class="cards">
+          <img
+            src="./imgs/new_york.webp"
+            alt="New York city"
+            class="cards-img">
+          <div class="description">
+            <p class="city">New York</p>
+            <p class="slogan">Concrete jungle</p>
+          </div>
+        </article>
+        <article class="cards">
+          <img
+            src="./imgs/yosemite.webp"
+            alt="Yosemite forest"
+            class="cards-img">
+          <div class="description">
+            <p class="city">Yosemite</p>
+            <p class="slogan">A break from the world</p>
+          </div>
+        </article>
+        <article class="cards">
+          <img
+            src="./imgs/yosemite.webp"
+            alt="Yosemite forest"
+            class="cards-img">
+          <div class="description">
+            <p class="city">Yosemite</p>
+            <p class="slogan">A break from the world</p>
+          </div>
+        </article>
+        <article class="cards">
+          <img
+            src="./imgs/yosemite.webp"
+            alt="Yosemite forest"
+            class="cards-img">
+          <div class="description">
+            <p class="city">Yosemite</p>
+            <p class="slogan">A break from the world</p>
+          </div>
+        </article>
+        <article class="cards">
+          <img
+            src="./imgs/yosemite.webp"
+            alt="Yosemite forest"
+            class="cards-img">
+          <div class="description">
+            <p class="city">Yosemite</p>
+            <p class="slogan">A break from the world</p>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="h-auto my-0 mx-auto px-4 max-w-3xl">
+      <h2 class="heading">Trending Stays</h2>
+      <section class="flex flex-col gap-5 h-auto my-4">
+        <article class="min-w-[192px] h-auto rounded-lg shadow-md relative">
+          <img
+            srcset="./imgs/chicago-736w.jpg 736w"
+            sizes="
+              (min-width: 820px) 736px,
+              (min-win: 380px) 92.38vw,
+              calc(66.67vw + 88px)
+            "
+            src="./imgs/chicago-736w.webp"
+            alt="Photo of Chicago's hotel room"
+            class="w-full h-3/6 rounded-lg bg-cover">
+          <div class="absolute top-0 left-0 w-full min-w-[198px] h-full p-7 flex flex-col items-start gap-1">
+            <p class="text-white text-xl font-extrabold tracking-wider">Chicago</p>
+            <p class="text-white">2 rooms, bathroom and kitchen.</p>
+          </div>
+        </article>
+        <article class="min-w-[192px] h-auto rounded-lg shadow-md relative">
+          <img
+            srcset="./imgs/miami-736w.webp 736w"
+            sizes="
+              (min-width: 820px) 736px,
+              (min-win: 380px) 92.38vw,
+              calc(66.67vw + 88px)
+            "
+            src="./imgs/miami-736w.webp"
+            alt="Miami Beach's picture"
+            class="w-full h-3/6 rounded-lg bg-cover">
+          <div class="absolute top-0 left-0 w-full min-w-[198px] h-full p-7 flex flex-col items-start gap-1">
+            <p class="text-white text-xl font-extrabold tracking-wider">Miami</p>
+            <p class="text-white">3 rooms, 2 bathroom, kitchen and amazing sea view.</p>
+          </div>
+        </article>
+        <article class="min-w-[192px] h-auto rounded-lg shadow-md relative">
+          <img
+            srcset="./imgs/LA-736w.webp 736w"
+            sizes="
+              (min-width: 820px) 736px,
+              (min-win: 380px) 92.38vw,
+              calc(66.67vw + 88px)
+            "
+            src="./imgs/LA-736w.webp"
+            alt="Miami Beach's picture"
+            class="w-full h-3/6 rounded-lg bg-cover">
+          <div class="absolute top-0 left-0 w-full min-w-[198px] h-full p-7 flex flex-col items-start gap-1">
+            <p class="text-white text-xl font-extrabold tracking-wider">Los Ángeles</p>
+            <p class="text-white">4 rooms, 3 bathroom, kitchen and private pool.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="h-auto my-0 mx-auto px-4 py-10 max-w-3xl">
+      <h2 class="heading">FAQs</h2>
+      <article>
+        <h3 class="sub-heading">Payment Methods</h3>
+        <p class="mt-2">We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
+      </article>
+      <article>
+        <h3 class="sub-heading">Cancellation Policy</h3>
+        <p class="mt-2">For stays of less than one week, it is important to notify 3 days in advance.
+          Otherwise it will be sanctioned.</p>
+      </article>
+      <article>
+        <h3 class="sub-heading">Long Stays</h3>
+        <p class="mt-2">We have stays of up to 3 months, in this case a
+          advance payment with an amount of 50% of the rental value.</p>
+      </article>
+      <article>
+        <h3 class="sub-heading">Pets</h3>
+        <p class="mt-2">The issue of pets will depend directly on the host.</p>
+      </article>
+      <article>
+        <h3 class="sub-heading">Safety information</h3>
+        <p class="mt-2">All our stays have insurance in case of accidents.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="w-full min-w-[320px] h-auto bg-blue-100">
+    <h3 class="text-xl font-bold">About Us</h3>
+    <ul>
+      <li>
+        <a href="#">Investors</a>
+      </li>
+      <li>
+        <a href="#">Jobs</a>
+      </li>
+      <li>
+        <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="#">Terms and Conditions</a>
+      </li>
+      <li>
+        <a href="#">Platzi Travel, Inc</a>
+      </li>
+      <li>
+        <p>Follow Us</p>
+        <a href="#">
+          <div>
+            <p>X</p>
+            <p>X</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
 </body>
 

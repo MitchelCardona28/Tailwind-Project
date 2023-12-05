@@ -22,7 +22,7 @@ module.exports = {
       backgroundColor: theme => ({
         ...theme('colors'),
         'principal': '#CC2D4A',
-        'secondary': '#8FA206',
+        'secondary': '#B39C4D',
         'tertiary': '#61AEC9',
       }),
       textColor: {
@@ -31,7 +31,7 @@ module.exports = {
         'tertiary': '#61AEC9',
       },
       fontFamily: {
-        Monserrat: ["Monserrat", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
