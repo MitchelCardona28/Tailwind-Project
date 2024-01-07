@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cards {
+  @apply min-w-[192px] h-auto m-4 shadow-md rounded-lg transition ease-in-out hover:scale-110 duration-300;
+}
+.cards-img {
+  @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+.heading{
+  @apply text-xl text-principal font-bold tracking-wide;
+}
+.description {
+  @apply h-24 flex flex-col items-start justify-start px-2 py-3 bg-tertiary rounded-b-lg;
+}
+.city {
+  @apply text-black text-lg font-bold tracking-widest;
+}
+.slogan {
+  @apply text-black text-base font-light tracking-wide;
+}
+.sub-heading {
+  @apply text-base text-principal font-bold mt-4;
+}
