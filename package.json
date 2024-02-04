@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tw:dev": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
     "tw:build": "NODE_ENV=production npx tailwindcss -o build.css --minify",
-    "tw:pages": "gh-pages -d ./"
+    "tw:pages": "gh-pages -d ./public"
   },
   "repository": {
     "type": "git",
